@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import {render} from 'react-dom';
 import thunkMiddleware from 'redux-thunk';
@@ -38,15 +36,6 @@ reduxRouterMiddleware.listenForReplays(store)
 
 console.log('store',store.getState());
 
-//class App extends React.Component {
-//    render() {
-//        return (
-//            <div>
-//                {this.props.children}
-//            </div>
-//        )
-//    }
-//}
 
 import styles from './asset/styles/CitiesSettingsPage/CitiesSettings.css';
 

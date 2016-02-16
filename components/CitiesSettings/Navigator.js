@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../asset/styles/CitiesSettingsPage/CitiesSettings.css';
-import {Button} from 'react-bootstrap';
+import {Button} from 'amazeui-touch'
 import {Link} from 'react-router';
 import {routeActions} from 'react-router-redux';
 import {Icon} from 'amazeui-touch';

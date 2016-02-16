@@ -1,13 +1,18 @@
 var webpack = require('webpack');
 var path = require('path');
 
+var node_modules = path.resolve(__dirname, 'node_modules');
+var reactPath = path.resolve(node_modules, 'react/dist/react.min.js');
+var reactLibPath = path.resolve(node_modules, 'react/lib');
+var amazeuiTouchPath = path.resolve(node_modules, 'amazeui-touch/dist/amazeui.touch.min.js');
+var reactRouterPath = path.resolve(node_modules, 'react-router/umd/ReactRouter.min.js');
 
 
-module.exports = {
+var config = {
     entry: [
-        'webpack-dev-server/client?http://localhost:8080',
+        //'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
-        './index.js',
+        './index.js'
     ],
     module: {
         loaders: [
@@ -26,10 +31,18 @@ module.exports = {
                 test: /\.(png|jpg)$/,
                 loader: 'url-loader?limit=100000000'
             }
-        ]
+        ],
+        noParse:[reactPath]
     },
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx'],
+        alias: {
+            'react/lib': reactLibPath,
+            'react': reactPath,
+            'amazeui-touch': amazeuiTouchPath,
+            'react-router': reactRouterPath
+        }
+
     },
     output: {
         path: './',
@@ -42,10 +55,9 @@ module.exports = {
         headers: { "Access-Control-Allow-Origin": "*" }
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        //new webpack.ProvidePlugin({
-        //    'Promise': 'es6-promise',
-        //    'fetch': 'imports?this=>global!exports?global.fetch!isomorphic-fetch'
-        //})
+        new webpack.HotModuleReplacementPlugin()
     ]
 };
+
+
+module.exports = config;

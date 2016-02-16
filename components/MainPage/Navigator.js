@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Button} from 'react-bootstrap';
+import {Button} from 'amazeui-touch';
 
 import style from '../../asset/styles/MainPage/Navigator.css';
 

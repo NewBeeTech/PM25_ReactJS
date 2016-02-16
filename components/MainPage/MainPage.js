@@ -9,7 +9,6 @@ var MediaQuery = require('react-responsive');
 
 import styles from '../../asset/styles/MainPage/style.css';
 
-import {Button, Grid, Row, Col,Nav,NavItem,Navbar} from 'react-bootstrap';
 
 import Navigator from './Navigator';
 import InitPage from '../common/InitPage';
