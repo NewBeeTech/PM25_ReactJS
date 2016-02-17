@@ -4,8 +4,12 @@
     left: 0;
     width: 80%;
     height: 100%;
-    background-image: url(/asset/images/bg@3x.png);
-    background-size: cover;
+    color: rgb(255, 255, 255);
+    background: -webkit-radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), -webkit-radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), rgb(147, 148, 148);
+    background: -moz-radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), -moz-radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), rgb(147, 148, 148);
+    background: radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), radial-gradient(rgb(255,255,255) 15%, rgba(0,0,0,0) 16%), rgb(147, 148, 148);
+    background-position: 0 0, 30px 30px;
+    background-size: 60px 60px;
 }
 
 .add_cities_list {
