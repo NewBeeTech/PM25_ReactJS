@@ -40,6 +40,7 @@
     "presets": ["es2015", "react"]
   },
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --colors --hot "
+    "dev": "webpack-dev-server --inline --progress --colors --hot ",
+    "deploy":"webpack -p --inline --progress --colors"
   }
 }
