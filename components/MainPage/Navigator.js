@@ -4,6 +4,8 @@ import {Button} from 'amazeui-touch';
 
 import style from '../../asset/styles/MainPage/Navigator.css';
 
+//TODO: 修正导航左侧按钮位置显示不一问题
+
 class Navigator extends React.Component {
     render() {
         return (
@@ -17,7 +19,7 @@ class Navigator extends React.Component {
                 <div className="col-xs-8 text-center nav_title">
                     为人民服雾
                 </div>
-                <div className="col-xs-2">
+                <div className="col-xs-2 right_col">
                     <Button className="right_button">
                         <span className="glyphicon glyphicon-cog" aria-hidden="true"></span>
                     </Button>
