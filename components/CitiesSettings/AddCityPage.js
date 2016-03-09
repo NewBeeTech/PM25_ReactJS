@@ -12,9 +12,7 @@ import * as AddCityActions from '../../actions/AddCityActions';
 import CitiesList from './CitiesList';
 
 class AddCityPage extends  React.Component {
-    constructor(props) {
-        super(props);
-    }
+
     componentWillMount() {
         if(this.props.CitiesList.get('cities').count() == 0) {
             this.props.dispatch(AddCityActions.getCitiesList());

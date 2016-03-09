@@ -41,6 +41,6 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --colors --hot ",
-    "deploy":"webpack -p --inline --progress --colors"
+    "deploy":"webpack  --inline --progress --colors"
   }
 }

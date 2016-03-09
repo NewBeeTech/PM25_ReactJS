@@ -1,12 +1,13 @@
 import fetch from 'isomorphic-fetch';
 import AppInfo from 'json!../AppInfo.json';
 
+// actions define
 export const Get_Cities_List_Request = 'Get_Cities_List_Request';
 export const Get_Cities_List_Success = 'Get_Cities_List_Success';
 export const Get_Cities_List_Failure= 'Get_Cities_List_Failure';
-
 export const ADD_CITY = 'ADD_CITY';
 
+// actions creator
 export function getCitiesListRequest() {
     return {
         type: Get_Cities_List_Request

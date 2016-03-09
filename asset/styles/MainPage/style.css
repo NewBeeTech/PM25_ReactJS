@@ -13,7 +13,7 @@
     background: repeating-linear-gradient(180deg, rgba(42,109,234,1) 0, rgba(42,109,234,1) 18%, rgba(105,137,206,0.92) 33%, rgba(64,110,201,0.85) 47%, rgba(105,137,206,0.75) 68%, rgba(105,137,206,0.75) 84%, rgba(105,137,206,0.75) 100%);
     background-position: 50% 50%;
     transform: translateX(80%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     overflow-x: hidden;
     z-index: 999;
 }
