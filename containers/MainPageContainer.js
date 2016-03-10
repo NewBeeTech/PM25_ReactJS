@@ -13,8 +13,8 @@ class MainPageContainer extends React.Component {
             <MainPage
               initProps = {this.props.Init}
               citiesProps = {this.props.Cities}
-              get_local_position = {() => this.props.dispatch(InitActions.get_local_position())}
-              left_toggle_action = {() => this.props.dispatch(mainPageActions.toggle_left())}
+              getLocalPosition = {() => this.props.dispatch(InitActions.getLocalPosition())}
+              left_toggle_action = {() => this.props.dispatch(mainPageActions.toggleLeft())}
               left_toggle={this.props.MainPage.left_toggle}
               state={this.props.MainPage}
             />

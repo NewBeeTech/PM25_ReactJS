@@ -16,7 +16,7 @@ import CityPanel from './CityPanel';
 class  MainPage extends React.Component{
     constructor(props) {
       super(props);
-      this.props.get_local_position();
+      this.props.getLocalPosition();
     }
 
     leftToggle() {
@@ -25,15 +25,15 @@ class  MainPage extends React.Component{
 
     render() {
       return (
-          <div className={this.left_toggle() ? 'MainPage_transform' : 'MainPage_default'}>
-                              <Navigator left_toggle_action={this.props.left_toggle_action}/>
-                              <div className="container city_panel_container">
-                                      <CityPanel Cities={this.props.citiesProps}/>
-                              </div>
-
-                      </div>
+          <div className={this.leftToggle() ? 'MainPage_transform' : 'MainPage_default'}>
+            <Navigator left_toggle_action={this.props.left_toggle_action}/>
+              <div className="container city_panel_container">
+                <CityPanel Cities={this.props.citiesProps}/>
+              </div>
+          </div>
       );
     }
 }
 
 export default MainPage;
+

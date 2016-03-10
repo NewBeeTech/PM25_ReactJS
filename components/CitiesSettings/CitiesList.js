@@ -28,8 +28,8 @@ class CitiesList extends React.Component {
   render() {
     return (
       <List className="cities_list">
-                {this.listItems()}
-            </List>
+        {this.listItems()}
+      </List>
     );
   }
 }

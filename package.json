@@ -6,7 +6,6 @@
     "react":"^0.14.2",
     "react-redux":"^4.0.0",
     "css-loader":"",
-    "react-bootstrap":"",
     "redux":"^3.0.4",
     "redux-thunk":"",
     "react-responsive":"",
@@ -18,7 +17,8 @@
     "es6-promise":"",
     "jsdom":"",
     "jquery":"",
-    "amazeui-touch":""
+    "amazeui-touch":"",
+    "graceful-fs":"^4.0.0"
   },
   "devDependencies":{
     "webpack":"",
@@ -34,12 +34,18 @@
     "file-loader":"",
     "imports-loader":"",
     "exports-loader":"",
-    "json-loader":""
+    "json-loader":"",
+    "babel-plugin-transform-flow-strip-types'":"",
+    "mocha":"",
+    "chai":"",
+    "chai-immutable": "",
+    "jsdom":""
   },
   "babel": {
     "presets": ["es2015", "react"]
   },
   "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
     "dev": "webpack-dev-server --inline --progress --colors --hot ",
     "deploy":"webpack  --inline --progress --colors"
   }

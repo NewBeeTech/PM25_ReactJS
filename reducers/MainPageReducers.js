@@ -5,7 +5,7 @@ function MainPageReducers(state={ left_toggle: false,
   'use strict';
 
   switch (action.type) {
-    case Left_View_Toggle:
+    case LEFT_VIEW_TOGGLE:
       return Object.assign({}, state, {
         left_toggle: !state.left_toggle,
       });

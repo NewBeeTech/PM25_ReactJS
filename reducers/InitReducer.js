@@ -14,19 +14,19 @@ var defaultState = Immutable.Map({
 
 export default function Init(state=defaultState, action) {
   switch (action.type) {
-    case initAction.Get_Local_Position_Request:
+    case initAction.GET_LOCAL_POSITION_REQUEST:
       return state.set('isFetching', true);
-    case initAction.Get_Local_Position_Success:
+    case initAction.GET_LOCAL_POSITION_SUCCESS:
       return (
           state.set('isFetching', false)
               .setIn(['position', 'Latitude'], action.position.Latitude)
               .setIn(['position', 'Longtitude'], action.position.Longtitude)
               .set('cityName', action.cityName)
             );
-    case initAction.Get_Local_Position_Failure:
+    case initAction.GET_LOCAL_POSITION_FAILURE:
       return state.set('isFetching', false)
           .set('error', true)
-                .set('errorMessage', '无法获取当前位置');
+          .set('errorMessage', '无法获取当前位置');
     default:
       return state;
   }
