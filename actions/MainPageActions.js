@@ -1,11 +1,9 @@
-export const Left_View_Toggle = 'Left_View_Toggle';
-export const Right_View_Toggle = 'Right_View_Toggle';
+export const LEFT_VIEW_TOGGLE = 'LEFT_VIEW_TOGGLE';
+export const RIGHT_VIEW_TOGGLE = 'RIGHT_VIEW_TOGGLE';
 
-
-export function toggle_left() {
-    "use strict";
-    return {
-        type: Left_View_Toggle
-    }
+export function toggleLeft() {
+  return {
+    type: LEFT_VIEW_TOGGLE,
+  };
 }
 

@@ -8,15 +8,15 @@ import React from 'react';
 
 class AppSettings extends React.Component {
     render() {
-        return (
-            <div>
+      return (
+          <div>
                 App settings View
-                {/*console.log(this.props)*/}
-                <div>
-                {this.props.page}
-                </div>
+            {/*console.log(this.props)*//*console.log(this.props)*/}
+            <div>
+              {this.props.page}
             </div>
-        )
+          </div>
+      );
     }
 };
 

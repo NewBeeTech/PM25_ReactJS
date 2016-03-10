@@ -1,9 +1,8 @@
-export const Set_Prefered_City = 'Set_Prefered_City';
+export const SET_PREFERED_CITY = 'SET_PREFERED_CITY';
 
 export function setPreferedCity(CityName:string) {
-    "use strict";
-    return {
-        type: Set_Prefered_City,
-        cityName: CityName
-    }
-}
+  return {
+    type: SET_PREFERED_CITY,
+    cityName: CityName,
+  };
+};

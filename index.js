@@ -4,20 +4,18 @@ import thunkMiddleware from 'redux-thunk';
 import {createStore, applyMiddleware, combineReducers} from 'redux';
 import {Provider} from 'react-redux';
 import reducers from './reducers/reducers';
-import {Router,Route,IndexRoute,Link} from 'react-router';
+import {Router, Route, IndexRoute, Link} from 'react-router';
 import {syncHistory, routeReducer} from 'react-router-redux';
 
-import  createHistory  from 'history/lib/createBrowserHistory'
+import  createHistory  from 'history/lib/createBrowserHistory';
 let browserHistory = createHistory();
-
-
 
 import Apps from './containers/app.js';
 
 let rootElement = document.getElementById('app');
 
 // Sync dispatched route actions to the history
-const reduxRouterMiddleware = syncHistory(browserHistory)
+const reduxRouterMiddleware = syncHistory(browserHistory);
 const createStoreWithMiddleware = applyMiddleware(
     reduxRouterMiddleware,
     thunkMiddleware
@@ -32,11 +30,9 @@ const store = createStoreWithMiddleware(
     window.devToolsExtension ? window.devToolsExtension() : undefined
 );
 
-reduxRouterMiddleware.listenForReplays(store)
+reduxRouterMiddleware.listenForReplays(store);
 
-console.log('store',store.getState());
-
-
+console.log('store', store.getState());
 
 import styles from './asset/styles/CitiesSettingsPage/CitiesSettings.css';
 
